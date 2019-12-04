@@ -18,7 +18,7 @@ function handleClose() {
 	}
 }
 
-function toggleBattle() {
+function doToggleBattle() {
 	// Ignore button if already playing
 	if ($.battlePlayer.playing) {
 		$.battlePlayer.stop();

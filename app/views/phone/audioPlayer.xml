@@ -1,15 +1,18 @@
 <Alloy>
     <Window title="Audio Player" onOpen="handleOpen" onClose="handleClose">
-        
+
         <Label id="progress" />
-        
-        <Button id="toggleBattle" onClick="toggleBattle"></Button>
+
+        <Button id="toggleBattle" onClick="doToggleBattle"></Button>
 
         <Slider id="volume" onChange="changeVolume" />
 
-        <AudioPlayer id="player" ns="Ti.Media" onProgress="audioProgression" onChange="changeMusic" onComplete="handleMusicComplete" />
-        <AudioPlayer id="battlePlayer" ns="Ti.Media" onChange="completeBattle" onComplete="handleBattleComplete" />
-        <AudioPlayer id="applause" ns="Ti.Media" />
+        // Move AudioPlayers out of Window
+
         <Label id="credits" />
     </Window>
+
+    <AudioPlayer id="player" ns="Ti.Media" onProgress="audioProgression" onChange="changeMusic" onComplete="handleMusicComplete" />
+    <AudioPlayer id="battlePlayer" ns="Ti.Media" onChange="completeBattle" onComplete="handleBattleComplete" />
+    <AudioPlayer id="applause" ns="Ti.Media" />
 </Alloy>
