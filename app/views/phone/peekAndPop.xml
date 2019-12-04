@@ -10,10 +10,10 @@
             </View>
         </Preview>
         <Actions>
-            <PreviewAction id="actionTitle" onClick="actionTitle" ></PreviewAction>
+            <PreviewAction id="actionTitle" onClick="alertActionTitle" ></PreviewAction>
             <PreviewActionGroup id="actionGroup">
-                <PreviewAction id="action" onClick="action"></PreviewAction>
-                <PreviewAction id="subAction" onClick="subAction"></PreviewAction>
+                <PreviewAction id="action" onClick="alertAction"></PreviewAction>
+                <PreviewAction id="subAction" onClick="alertSubAction"></PreviewAction>
             </PreviewActionGroup>
         </Actions>
         <Button id="buttonBack" onClick="goBack"/>
