@@ -1,6 +1,6 @@
 <Alloy>
 		<Window customToolbar="toolbar" theme="Theme.Titanium">
-				<Toolbar class="toolbar">
+				<Toolbar id="toolbar" class="toolbar">
 						<!-- The Items tag sets the Toolbar.items property. -->
 						<Items>
 								<Button id="ok" title="OK" />

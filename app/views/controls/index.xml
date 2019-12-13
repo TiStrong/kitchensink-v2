@@ -7,6 +7,7 @@
                     <ListItem title="Label" itemId="label" />
                     <ListItem title="Tabbed Bar" itemId="tabbedbar" platform="android,ios" />
                     <ListItem title="Toolbar" itemId="toolbar" platform="android,ios"/>
+                    <ListItem title="Toolbar as ActionBar" itemId="toolbarAsActionBar" platform="android,ios"/>
                     <ListItem title="Command Bar" itemId="commandbar" platform="windows"/>
                     <ListItem title="Switch" itemId="switchcontrol" />
                     <ListItem title="Stepper" itemId="stepper" platform="ios"/>
