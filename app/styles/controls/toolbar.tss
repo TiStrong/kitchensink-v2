@@ -4,5 +4,9 @@
 }
 
 '.toolbar[platform=android]': {
-	backgroundColor: 'gray'
+	/*
+	 * FIXME: `backgroundColor` really exists (at least for android),
+	 * but in the docs it is excluded
+	 */
+	// backgroundColor: 'gray'
 }

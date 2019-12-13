@@ -4,6 +4,9 @@
 	width: Ti.UI.FILL,
 	top: 0,
 	barColor: 'green',
-	displayHomeAsUp: true,
-	homeButtonEnabled: true
+	/*
+	 * FIXME: `displayHomeAsUp` and `homeButtonEnabled` not defined in the docs 
+	 */
+	// displayHomeAsUp: true,
+	// homeButtonEnabled: true
 }

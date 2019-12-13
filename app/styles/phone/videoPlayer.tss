@@ -1,7 +1,11 @@
 
 '#myPlayer': {
 	backgroundColor:'#111',
-	mediaControlStyle:Titanium.Media.VIDEO_CONTROL_DEFAULT,
+	/*
+	 * FIXME: in docs `mediaControlStyle` removed in 7.0.0
+	 * actually it's still exists in android
+	 */
+	// mediaControlStyle:Titanium.Media.VIDEO_CONTROL_DEFAULT,
 	height:300,
 	autoplay:false,
 	url: '/videos/example-video.mp4'
