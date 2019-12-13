@@ -10,6 +10,7 @@ tmp
 Thumbs.db
 /platform
 /i18n
-plugins/ti.alloy
+/app/gen
 node_modules/
+/.idea
 retirejs.output.json

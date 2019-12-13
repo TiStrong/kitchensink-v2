@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"incremental": true,
+		"tsBuildInfoFile": "./build/.tsbuildinfo.json",
+		"baseUrl": ".",
+		"paths": {
+			"*": [
+				"./app/gen/*",
+				"./app/*",
+				"./app/lib/*"
+			]
+		},
+		"rootDirs": [
+			"app/gen",
+			"app/lib",
+			"app"
+		],
+		"target": "es5",
+		"module": "commonjs",
+		"outDir": "./build/TypeScript",
+		"lib": [
+			"dom",
+			"es2015",
+			"es2015.iterable"
+		],
+		"typeRoots": [
+			"./node_modules/@ti.types",
+			"./node_modules/@types"
+		],
+		"noImplicitAny": true,
+		"downlevelIteration": true,
+		"strict": true,
+		"esModuleInterop": true
+	},
+	"include": [
+		"app/app.ts",
+		"app/controllers/**/*",
+		"app/lib/**/*",
+		"app/models/**/*",
+		"app/gen/**/*"
+	]
+}

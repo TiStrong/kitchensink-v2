@@ -1,0 +1,26 @@
+<Alloy>
+    <Tab title="Phone">
+        <Window title="Phone">
+            <ListView id="listView" onItemclick="openComponent">
+                <ListSection>
+                    <ListItem itemId="identity" title="Identity (Biometric Authentication)"/>
+                    <ListItem itemId="ShortcutItems" platform="ios" title="3D/Haptic Touch: Shortcut Items"/>
+                    <ListItem itemId="PeekAndPop" platform="ios" title="3D/Haptic Touch: Peek and Pop"/>
+                    <ListItem itemId="BundleSettings" platform="ios" title="Bundle Settings"/>
+                    <ListItem itemId="Drawer" platform="android" title="Drawer"/>
+                    <ListItem itemId="Clipboard" title="Clipboard"/>
+                    <ListItem itemId="Database" title="Database"/>
+                    <ListItem itemId="geolocation" title="Geolocation"/>
+                    <ListItem itemId="Network" title="Network"/>
+                    <ListItem itemId="Sound" title="Sound"/>
+                    <ListItem itemId="AudioRecorder" title="Audio Recorder"/>
+                    <ListItem itemId="CameraGallery" title="Camera + Gallery"/>
+                    <ListItem itemId="Accelerometer" title="Accelerometer"/>
+                    <ListItem itemId="map" title="Maps"/>
+                    <ListItem itemId="VideoPlayer" title="Video Player"/>
+                    <ListItem itemId="AudioPlayer" title="Audio Player"/>
+                </ListSection>
+            </ListView>
+        </Window>
+    </Tab>
+</Alloy>

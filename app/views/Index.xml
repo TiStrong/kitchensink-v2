@@ -1,0 +1,9 @@
+<Alloy>
+	<TabGroup onOpen="validateDocsInfo">
+		<ActionBar platform="android" logo="appicon.png" />
+		<Require src="controls/Index" />
+		<Require src="phone/Index" />
+		<Require src="mashups/Index" />
+		<Require src="console/Index" />
+	</TabGroup>
+</Alloy>

@@ -1,0 +1,16 @@
+<Alloy>
+    <Window title="Controls">
+        <ListView id="listView" onItemclick="openComponent">
+            <ListSection>
+                <ListItem title="View" itemId="View" />
+                <ListItem title="Scroll View" itemId="ScrollView" />
+                <ListItem title="Scrollable View" itemId="ScrollableView" />
+                <ListItem title="List View" itemId="ListView" />
+                <ListItem title="Blur View" itemId="BlurView" platform="ios"/>
+                <ListItem title="Image View" itemId="ImageView" />
+                <ListItem title="Web View" itemId="WebView" />
+                <ListItem title="Gradients" itemId="Gradients" />
+            </ListSection>
+        </ListView>
+    </Window>
+</Alloy>

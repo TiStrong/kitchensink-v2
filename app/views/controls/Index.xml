@@ -1,0 +1,25 @@
+<Alloy>
+    <Tab title="Controls">
+        <Window title="Controls">
+            <ListView id="listView" onItemclick="openComponent">
+                <ListSection>
+                    <ListItem title="Views" itemId="views/Index" />
+                    <ListItem title="Label" itemId="Label" />
+                    <ListItem title="Tabbed Bar" itemId="TabbedBar" platform="android,ios" />
+                    <ListItem title="Toolbar" itemId="Toolbar" platform="android,ios"/>
+                    <ListItem title="Toolbar as ActionBar" itemId="ToolbarAsActionBar" platform="android,ios"/>
+                    <ListItem title="Command Bar" itemId="CommandBar" platform="windows"/>
+                    <ListItem title="Switch" itemId="SwitchControl" />
+                    <ListItem title="Stepper" itemId="Stepper" platform="ios"/>
+                    <ListItem title="Slider" itemId="Slider" />
+                    <ListItem title="Activity Indicator" itemId="ActivityIndicator" />
+                    <ListItem title="Picker" itemId="Picker" />
+                    <ListItem title="Alert Dialog" itemId="AlertDialog" />
+                    <ListItem title="Option Dialog" itemId="OptionDialog" />
+                    <ListItem title="Text Field" itemId="TextField" />
+                    <ListItem title="Text Area" itemId="TextArea" />
+                </ListSection>
+            </ListView>
+        </Window>
+    </Tab>
+</Alloy>
