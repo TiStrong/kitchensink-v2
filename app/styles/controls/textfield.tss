@@ -54,7 +54,7 @@
     keyboardType: Ti.UI.KEYBOARD_TYPE_EMAIL,
     hintText: 'Email textfield',
     autocorrect: false,
-    autocapitalization: false,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
     autofillType: Titanium.UI.AUTOFILL_TYPE_EMAIL
 }
 

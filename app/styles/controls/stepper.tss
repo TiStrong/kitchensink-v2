@@ -1,6 +1,6 @@
 
 '.stepper': {
-	mininum: 0,
+	minimum: 0,
 	maximum: 10,
 	tintColor: 'red'
 }
