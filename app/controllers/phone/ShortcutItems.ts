@@ -125,7 +125,7 @@ export default class ShortcutItems extends ShortcutItemsAbstract {
 
 		this.appShortcuts.addDynamicShortcut({
 			// Must be unique to identify it in the shortcutitemclick-listener in index.js
-			itemtype: 'details',
+			identifier: 'details',
 
 			title: 'Titanium rocks!',
 			subtitle: '(Dynamically created)',
