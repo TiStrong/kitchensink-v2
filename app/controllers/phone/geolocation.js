@@ -17,7 +17,9 @@ import Map from 'ti.map';
 				Ti.API.info('Google Play services is installed.');
 				break;
 			case Map.SERVICE_MISSING:
-				alert('Google Play services is missing. Please install Google Play services from the Google Play store.');
+				alert(
+					'Google Play services is missing. Please install Google Play services from the Google Play store.',
+				);
 				break;
 			case Map.SERVICE_VERSION_UPDATE_REQUIRED:
 				alert('Google Play services is out of date. Please update Google Play services.');
@@ -35,7 +37,7 @@ import Map from 'ti.map';
 
 	// Checks for location service available
 	if (Ti.Geolocation.locationServicesEnabled) {
-		Ti.Geolocation.requestLocationPermissions(Ti.Geolocation.AUTHORIZATION_WHEN_IN_USE, (event) => {
+		Ti.Geolocation.requestLocationPermissions(Ti.Geolocation.AUTHORIZATION_WHEN_IN_USE, event => {
 			console.log(event);
 			if (!event.success) {
 				alert(`Error granting location permissions: ${event.error}`);
@@ -49,7 +51,7 @@ import Map from 'ti.map';
 	} else {
 		Ti.API.error('Your device has GPS turned off. Please turn it on.');
 	}
-}());
+})();
 
 function updatePosition(e) {
 	if (!e.success || e.error) {
@@ -70,7 +72,7 @@ function updatePosition(e) {
 }
 
 function getCurrentPosition() {
-	Ti.Geolocation.getCurrentPosition((e) => {
+	Ti.Geolocation.getCurrentPosition(e => {
 		if (!e.success || e.error) {
 			Ti.API.debug(JSON.stringify(e));
 			Ti.API.debug(e);
@@ -88,7 +90,7 @@ function getCurrentPosition() {
 				latitude: latitude,
 				longitude: longitude,
 				latitudeDelta: 0.1,
-				longitudeDelta: 0.1
+				longitudeDelta: 0.1,
 			},
 			regionFit: true,
 		});
@@ -96,7 +98,7 @@ function getCurrentPosition() {
 		$.map.add(mapview);
 
 		// Handle click events on any annotations on this map.
-		mapview.addEventListener('click', (e) => {
+		mapview.addEventListener('click', e => {
 			Ti.API.info('Clicked ' + e.clicksource + ' on ' + e.latitude + ',' + e.longitude);
 		});
 	});

@@ -5,9 +5,10 @@ import fb from 'facebook';
  * The scoped constructor of the controller.
  **/
 (function constructor() {
-	if (OS_ANDROID) { // Required for Android
+	if (OS_ANDROID) {
+		// Required for Android
 		fb.createActivityWorker({
-			lifecycleContainer: $.fbWin
+			lifecycleContainer: $.fbWin,
 		});
 	}
 
@@ -59,24 +60,29 @@ import fb from 'facebook';
 
 	// gets user profile information (name, picture, friends, posts)
 	function getGraphPath() {
-		fb.requestWithGraphPath('me', {
-			fields: 'id,name,picture,friends,posts'
-		}, 'GET', (e) => {
-			if (e.success) {
-				const respObj = JSON.parse(e.result);
-				logger.log('Modules.Facebook.requestWithGraphPath', respObj);
+		fb.requestWithGraphPath(
+			'me',
+			{
+				fields: 'id,name,picture,friends,posts',
+			},
+			'GET',
+			e => {
+				if (e.success) {
+					const respObj = JSON.parse(e.result);
+					logger.log('Modules.Facebook.requestWithGraphPath', respObj);
 
-				$.fbUserImage.image = respObj.picture.data.url;
-				$.fbUserName.text = 'Welcome ' + respObj.name;
-				$.fbFriends.text = 'Total Friends ' + respObj.friends.summary.total_count;
-			} else if (e.error) {
-				logger.log(e.error);
-			} else {
-				logger.log('Unknown response');
-			}
-		});
+					$.fbUserImage.image = respObj.picture.data.url;
+					$.fbUserName.text = 'Welcome ' + respObj.name;
+					$.fbFriends.text = 'Total Friends ' + respObj.friends.summary.total_count;
+				} else if (e.error) {
+					logger.log(e.error);
+				} else {
+					logger.log('Unknown response');
+				}
+			},
+		);
 	}
-}());
+})();
 
 // Logs out the current user
 
@@ -87,7 +93,7 @@ function logout() {
 // Logs out the current user
 
 function login() {
-	fb.permissions = [ 'user_photos', 'email', 'user_friends', 'public_profile', 'user_birthday', 'user_likes' ];
+	fb.permissions = ['user_photos', 'email', 'user_friends', 'public_profile', 'user_birthday', 'user_likes'];
 	fb.initialize();
 
 	if (!fb.loggedIn) {
@@ -98,8 +104,7 @@ function login() {
 // Shares a post
 
 function share() {
-
 	fb.presentShareDialog({
-		link: 'https://appcelerator.com/'
+		link: 'https://appcelerator.com/',
 	});
 }

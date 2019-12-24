@@ -5,7 +5,6 @@ function handleMapClick(e) {
 
 	// check if annotation was clicked
 	if (e.hasOwnProperty('annotation')) {
-
 		// check if the annotation was selected or deselected based on previous state
 		if (e.annotation.id === clickedAnnotation) {
 			logger.log('annotation deselected', e.annotation);
@@ -24,5 +23,5 @@ function handleMapClick(e) {
  * For now, either create them in the controller or add them manually
  */
 $.mapview.addCircle($.mapCircle);
-$.mapview.addPolylines([ $.mapLineOne, $.mapLineTwo, $.mapLineThree ]);
+$.mapview.addPolylines([$.mapLineOne, $.mapLineTwo, $.mapLineThree]);
 $.mapview.addPolygon($.mapPolygon);
