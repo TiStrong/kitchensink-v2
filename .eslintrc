@@ -1,6 +1,52 @@
 {
-    "extends": [ "axway/env-alloy" ],
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "prettier",
+        "prettier/@typescript-eslint"
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "parserOptions":  {
+        "ecmaVersion":  2018,
+        "sourceType":  "module"
+    },
     "rules": {
         "import/no-absolute-path": "off"
-    }
+    },
+    "overrides": [
+        {
+            "files": "app/**/*.js",
+            "rules": {
+                "@typescript-eslint/explicit-function-return-type": "off",
+                "@typescript-eslint/no-use-before-define": "off",
+                "@typescript-eslint/no-unused-vars": "off"
+            }
+        },
+        {
+            "files": "app/**/*.d.ts",
+            "rules": {
+                "no-useless-constructor": "off",
+                "@typescript-eslint/no-useless-constructor": "off"
+            }
+        },
+        {
+            "files": "app/**/*.ts",
+            "rules": {
+                "@typescript-eslint/no-explicit-any": "off",
+                "@typescript-eslint/camelcase": "off"
+            }
+        },
+        {
+            "files": "app/gen/**/*.ts",
+            "rules": {
+                "@typescript-eslint/no-explicit-any": "off",
+                "@typescript-eslint/ban-ts-ignore": "off",
+                "@typescript-eslint/no-empty-function": "off",
+                "@typescript-eslint/no-unused-vars": "off"
+            }
+        }
+    ]
 }

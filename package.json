@@ -4,8 +4,8 @@
 	"description": "A refactored Alloy-based version of the KitchenSink demo-app",
 	"private": true,
 	"scripts": {
-		"lint": "eslint app/",
-		"format": "eslint app/ --fix"
+		"lint": "eslint app/ --ext .js,.ts",
+		"format": "eslint app/ --fix --ext .js,.ts"
 	},
 	"repository": {
 		"type": "git",
@@ -19,12 +19,13 @@
 	"devDependencies": {
 		"@ti.types/titanium": "^9.0.4",
 		"@types/backbone": "^1.4.1",
-		"@typescript-eslint/eslint-plugin": "^2.7.0",
-		"@typescript-eslint/parser": "^2.7.0",
+		"@typescript-eslint/eslint-plugin": "^2.13.0",
+		"@typescript-eslint/parser": "^2.13.0",
 		"alloy": "git+ssh://git@github.com/TiStrong/alloy.git#feature/typescript",
-		"eslint": "^5.15.0",
-		"eslint-config-axway": "^4.5.0",
-		"eslint-plugin-alloy": "^1.0.0",
+		"eslint": "^5.16.0",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"prettier": "^1.19.1",
 		"typescript": "^3.7.2"
 	}
 }
