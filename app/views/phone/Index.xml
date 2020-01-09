@@ -10,7 +10,7 @@
                     <ListItem itemId="Drawer" platform="android" title="Drawer"/>
                     <ListItem itemId="Clipboard" title="Clipboard"/>
                     <ListItem itemId="Database" title="Database"/>
-                    <ListItem itemId="geolocation" title="Geolocation"/>
+                    <ListItem itemId="Geolocation" title="Geolocation"/>
                     <ListItem itemId="Network" title="Network"/>
                     <ListItem itemId="Sound" title="Sound"/>
                     <ListItem itemId="AudioRecorder" title="Audio Recorder"/>
