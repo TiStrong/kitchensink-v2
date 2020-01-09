@@ -16,7 +16,7 @@
                     <ListItem itemId="AudioRecorder" title="Audio Recorder"/>
                     <ListItem itemId="CameraGallery" title="Camera + Gallery"/>
                     <ListItem itemId="Accelerometer" title="Accelerometer"/>
-                    <ListItem itemId="map" title="Maps"/>
+                    <ListItem itemId="Map" title="Maps"/>
                     <ListItem itemId="VideoPlayer" title="Video Player"/>
                     <ListItem itemId="AudioPlayer" title="Audio Player"/>
                 </ListSection>

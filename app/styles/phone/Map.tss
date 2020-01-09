@@ -76,7 +76,7 @@
         gapLength: 15,
         dashLength: 3
     }
-    
+
 }
 '#mapLineThree': {
     points: [
@@ -99,7 +99,7 @@
         type: Alloy.Globals.Map.POLYLINE_PATTERN_DASHED,
         gapLength: 15,
         dashLength: 15
-    }   
+    }
 }
 
 '#mapPolygon': {
@@ -126,7 +126,7 @@
             longitude: -121.993653,
         }
     ],
-    opacity: 0.7,
+    // opacity: 0.7, // Does not exists on Polygon
     holes: [
         [
             {
