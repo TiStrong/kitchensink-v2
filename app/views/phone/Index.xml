@@ -3,7 +3,7 @@
         <Window title="Phone">
             <ListView id="listView" onItemclick="openComponent">
                 <ListSection>
-                    <ListItem itemId="identity" title="Identity (Biometric Authentication)"/>
+                    <ListItem itemId="Identity" title="Identity (Biometric Authentication)"/>
                     <ListItem itemId="ShortcutItems" platform="ios" title="3D/Haptic Touch: Shortcut Items"/>
                     <ListItem itemId="PeekAndPop" platform="ios" title="3D/Haptic Touch: Peek and Pop"/>
                     <ListItem itemId="BundleSettings" platform="ios" title="Bundle Settings"/>
