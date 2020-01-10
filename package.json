@@ -17,6 +17,7 @@
 	},
 	"homepage": "https://github.com/appcelerator/kitchensink-v2#readme",
 	"devDependencies": {
+		"@ti.types/facebook": "^8.0.0",
 		"@ti.types/ti.identity": "^2.2.1",
 		"@ti.types/ti.map": "^4.5.0",
 		"@ti.types/titanium": "^9.0.6",
