@@ -16,4 +16,7 @@ export default class Index extends IndexAbstract {
 
 		logger.log('Ti.UI.TabGroup.activeTab.open', identifier);
 	}
+	public getViewEx(opts: { recurse: boolean }): Ti.UI.Tab {
+		return this.Index;
+	}
 }

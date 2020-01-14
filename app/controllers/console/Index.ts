@@ -2,7 +2,7 @@ import { logger } from '/logger';
 import { IndexAbstract } from './IndexAbstract';
 
 export default class Index extends IndexAbstract {
-	constructor() {
+	constructor(protected args?: any) {
 		super();
 		logger.on('change', this.showLogs.bind(this));
 	}
@@ -15,5 +15,8 @@ export default class Index extends IndexAbstract {
 	public clearLogs(): void {
 		logger.clearHistory();
 		this.showLogs();
+	}
+	public getViewEx(opts: { recurse: boolean }): Ti.UI.Tab {
+		return this.Index;
 	}
 }
