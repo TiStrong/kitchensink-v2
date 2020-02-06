@@ -20,15 +20,15 @@
 		"@ti.types/facebook": "^8.0.0",
 		"@ti.types/ti.identity": "^2.2.1",
 		"@ti.types/ti.map": "^4.5.0",
-		"@ti.types/titanium": "^9.0.6",
+		"@ti.types/titanium": "^9.0.11",
 		"@types/backbone": "^1.4.1",
-		"@typescript-eslint/eslint-plugin": "^2.13.0",
-		"@typescript-eslint/parser": "^2.13.0",
+		"@typescript-eslint/eslint-plugin": "^2.19.0",
+		"@typescript-eslint/parser": "^2.19.0",
 		"alloy": "git+ssh://git@github.com/TiStrong/alloy.git#feature/typescript",
 		"eslint": "^5.16.0",
-		"eslint-config-prettier": "^6.7.0",
+		"eslint-config-prettier": "^6.10.0",
 		"eslint-plugin-prettier": "^3.1.2",
 		"prettier": "^1.19.1",
-		"typescript": "^3.7.2"
+		"typescript": "^3.7.5"
 	}
 }
