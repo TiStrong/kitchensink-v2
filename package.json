@@ -19,8 +19,8 @@
 	"devDependencies": {
 		"@ti.types/facebook": "^8.0.0",
 		"@ti.types/ti.identity": "^2.2.1",
-		"@ti.types/ti.map": "^4.5.0",
-		"@ti.types/titanium": "^9.0.18",
+		"@ti.types/ti.map": "^4.5.1",
+		"@ti.types/titanium": "^9.0.20",
 		"@types/backbone": "^1.4.1",
 		"@typescript-eslint/eslint-plugin": "^2.19.0",
 		"@typescript-eslint/parser": "^2.19.0",
