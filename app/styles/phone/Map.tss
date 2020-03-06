@@ -1,4 +1,5 @@
 '#mapview': {
+    animate: true,
     region: {
         latitude: 37.359996,
         longitude: -121.950208,
