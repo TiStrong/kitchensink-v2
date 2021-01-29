@@ -8,6 +8,7 @@ It also includes full support for iOS, Android & Windows.
 
 
 ### Features
+- [x] TypeScript support
 - [x] Full ES6+ support
 - [x] API Logging
 - [x] Controls (Switch, Slider, Tabbed Bar, Text Field, Alerts, Dialogs, ...)
@@ -18,28 +19,17 @@ It also includes full support for iOS, Android & Windows.
 
 ### Running the KitchenSink App
 
-#### Via Appcelerator Studio
-
-1. Import it via *Dashboard* if available.
-2. Or import it via *File > Import... > Git > Git Repository as New Project* with *URI*:
-
-		https://github.com/appcelerator/kitchensink-v2
-
-3. Select a Simulator or Device to build to via *Run > Run As*.
-
-#### Via CLI
-
 1. Clone the repository:
 
 		git clone https://github.com/appcelerator/kitchensink-v2
 
-2. To run it with `appc run` first import it to the platform:
+2. Install dependencies:
 
-		appc new --import --no-services
+		npm install
 
 3. Build to Simulator or Device:
 
-		[appc run | ti build] -p ios [-T device]
+		ti build -p [android|ios] [-T device]
 
 ### Contribution
 
